@@ -46,19 +46,17 @@ const AllUser = () => {
         <StyledTable>
             <TableHead>
                 <TRow>
-                    <TableCell>Id</TableCell>
                     <TableCell>Name</TableCell>
                     <TableCell>Username</TableCell>
                     <TableCell>Email</TableCell>
                     <TableCell>Phone</TableCell>
-                    <TableCell>Action</TableCell>
+                    <TableCell>Actions</TableCell>
                 </TRow>
             </TableHead>
             <TableBody>
                 {
                     users.map(user => (
                         <TBody key = {user._id}>
-                            <TableCell>{user._id}</TableCell>
                             <TableCell>{user.name}</TableCell>
                             <TableCell>{user.username}</TableCell>
                             <TableCell>{user.email}</TableCell>
